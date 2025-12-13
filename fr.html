@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité de SeClip</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.25em; }
+        p { margin-top: 0; margin-bottom: 16px; }
+        ul { margin-top: 0; margin-bottom: 16px; padding-left: 2em; }
+        li { margin-bottom: 8px; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: rgba(27,31,35,0.05);
+            border-radius: 3px;
+        }
+        .language-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eaecef;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Politique de confidentialité de SeClip</h1>
+
+    <p><strong>Date d'entrée en vigueur :</strong> 12 décembre 2025</p>
+
+    <p>KuroAppWorks (« nous », « notre » ou « nos ») exploite l'application mobile SeClip (le « Service »). Cette politique de confidentialité vous informe de nos politiques concernant la collecte, l'utilisation et la divulgation de données personnelles lorsque vous utilisez notre Service, ainsi que des choix que vous avez associés à ces données.</p>
+
+    <p>Nous nous engageons à protéger votre vie privée. Toutes les données que vous créez dans SeClip sont stockées localement sur votre appareil et ne nous sont pas transmises, ni à aucun tiers, à l'exception des données collectées par nos partenaires publicitaires comme décrit ci-dessous.</p>
+
+    <h2>Collecte et utilisation des informations</h2>
+
+    <h3>1. Données que vous fournissez (stockées localement et chiffrées) :</h3>
+    <ul>
+        <li><strong>Mots-clés, éléments sécurisés et notes :</strong> Tout texte, identifiant, mot de passe, note ou autre information que vous enregistrez dans les onglets « Clips » et « Secure » est stocké exclusivement dans une base de données locale sur votre appareil.</li>
+        <li><strong>Données chiffrées :</strong> Les informations enregistrées dans l'onglet « Secure » (Sécurisé), y compris les notes et les champs personnalisés, sont chiffrées à l'aide de la norme industrielle AES-256 (mode GCM) avant d'être enregistrées dans la base de données locale de votre appareil. La clé de déchiffrement est dérivée de votre mot de passe principal et n'est jamais stockée en clair.</li>
+    </ul>
+
+    <h3>2. Paramètres et préférences de l'application (stockés localement) :</h3>
+    <p>Vos préférences d'application, telles que les paramètres de thème, la taille de la police et les paramètres d'authentification, sont stockées localement sur votre appareil à l'aide d'Android DataStore.</p>
+    
+    <h3>3. Informations pour la publicité et la gestion du consentement :</h3>
+    <p>Pour soutenir le Service, nous affichons des publicités et gérons le consentement des utilisateurs. Cela implique la collecte de certaines informations sur l'appareil par nos partenaires tiers.</p>
+    <ul>
+        <li><strong>Google AdMob :</strong> Nous utilisons Google AdMob pour diffuser des annonces. AdMob peut collecter des données telles que des identifiants d'appareil (par exemple, l'identifiant publicitaire), des adresses IP et des informations sur votre interaction avec les publicités pour offrir une expérience publicitaire personnalisée.</li>
+        <li><strong>Google User Messaging Platform (UMP) SDK :</strong> Dans les régions soumises à des réglementations de protection des données comme le RGPD, nous utilisons le SDK UMP de Google pour obtenir et gérer votre consentement concernant la collecte et l'utilisation de données à des fins publicitaires. Vos choix de consentement sont stockés localement et respectés par les services publicitaires.</li>
+    </ul>
+
+    <h2>Sécurité des données</h2>
+
+    <p>Nous prenons la sécurité de vos données très au sérieux et avons mis en place plusieurs niveaux de protection.</p>
+    <ul>
+        <li><strong>Chiffrement au repos :</strong> Tous les éléments de l'onglet « Secure » sont chiffrés. Sans votre mot de passe principal, il est informatiquement impossible de déchiffrer ces données.</li>
+        <li><strong>Mise en cache du mot de passe en mémoire :</strong> Pour faciliter l'accès à l'onglet Sécurisé (par exemple via PIN ou biométrie), votre mot de passe principal peut être temporairement conservé dans la mémoire (RAM) de votre appareil après une authentification réussie. Ce cache est effacé dès que l'application passe en arrière-plan ou est fermée.</li>
+        <li><strong>Sécurité de l'écran :</strong> Pour protéger contre les fuites de données visuelles, le Service utilise <code>FLAG_SECURE</code> d'Android. Cela empêche les captures d'écran, l'enregistrement d'écran et l'affichage du contenu de l'application dans la liste des applications récentes.</li>
+        <li><strong>Restriction de sauvegarde :</strong> Nous avons intentionnellement désactivé la fonction de sauvegarde automatique standard d'Android pour cette application. Il s'agit d'une mesure de sécurité visant à empêcher que vos données sensibles (y compris les éléments chiffrés et les paramètres) ne soient automatiquement téléchargées sur votre Google Drive ou d'autres services de sauvegarde cloud.</li>
+    </ul>
+    
+    <h2>Sauvegarde et restauration (contrôlées par l'utilisateur)</h2>
+    <ul>
+        <li><strong>Fonctionnalité optionnelle :</strong> Le Service propose une fonctionnalité optionnelle pour sauvegarder vos données dans un fichier de votre choix. Ce processus est initié et contrôlé entièrement par vous.</li>
+        <li><strong>Sécurité du fichier de sauvegarde :</strong> Si vous incluez des « Éléments sécurisés » dans votre sauvegarde, le fichier de sauvegarde contiendra les données chiffrées et un hachage du mot de passe au moment de la sauvegarde. Le mot de passe en clair n'est pas stocké, tout comme pour l'utilisation normale de l'application.</li>
+        <li><strong>Sécurité de la restauration :</strong> Pour restaurer une sauvegarde contenant des éléments sécurisés, vous <strong>devez</strong> fournir le mot de passe principal qui était actif lors de la création de la sauvegarde. Cela garantit que seule une personne possédant à la fois le fichier de sauvegarde et le mot de passe correct peut accéder aux informations chiffrées.</li>
+    </ul>
+
+    <h2>Gestion du presse-papiers</h2>
+    <ul>
+        <li><strong>Écriture dans le presse-papiers :</strong> La fonction principale de l'application est d'écrire vos informations enregistrées dans le presse-papiers de l'appareil pour votre commodité. L'application <strong>ne lit pas</strong> le contenu du presse-papiers.</li>
+        <li><strong>Traitement des données sensibles (Android 13+) :</strong> Lorsque vous copiez des éléments de l'onglet « Secure » sur des appareils fonctionnant sous Android 13 ou supérieur, les données sont marquées comme « sensibles ». Cela signale au système d'exploitation Android de masquer le contenu des aperçus et de l'effacer automatiquement après une certaine période (généralement une heure).</li>
+        <li><strong>Effacement manuel du presse-papiers (optionnel) :</strong> Le Service propose une notification optionnelle avec un bouton « Vider le presse-papiers ». Lorsqu'elle est activée, elle vous permet d'effacer manuellement le contenu du presse-papiers à tout moment pour une sécurité accrue.</li>
+    </ul>
+
+    <h2>Autorisations</h2>
+    <p>Le Service peut demander les autorisations suivantes :</p>
+    <ul>
+        <li><strong>Biométrie/Empreinte digitale :</strong> Pour permettre le déverrouillage de l'onglet « Secure » avec les capteurs biométriques de votre appareil.</li>
+        <li><strong>Notifications :</strong> Pour fournir une notification persistante pour un accès rapide à l'application et la fonction optionnelle d'effacement du presse-papiers.</li>
+    </ul>
+
+    <h2>Choix de l'utilisateur et consentement</h2>
+    <p>Dans les régions couvertes par le RGPD ou des réglementations similaires, un formulaire de consentement vous sera présenté au premier lancement pour choisir comment vos données sont utilisées à des fins publicitaires. Vous pouvez modifier vos préférences de consentement à tout moment depuis l'écran Paramètres de l'application.</p>
+
+    <h2>Modifications de cette politique de confidentialité</h2>
+    <p>Nous pouvons mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité dans l'application. Il vous est conseillé de consulter régulièrement cette politique de confidentialité pour prendre connaissance des éventuels changements.</p>
+
+    <h2>Nous contacter</h2>
+    <p>Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à : <a href="mailto:kuroappworks+contact@gmail.com">kuroappworks+contact@gmail.com</a></p>
+
+    <!-- Language Links Section -->
+    <div class="language-links">
+        <h3>Other Languages</h3>
+        <ul>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ja.html">日本語 (Japanese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/zh.html">中文 (Chinese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ko.html">한국어 (Korean)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/fr.html">Français (French)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/de.html">Deutsch (German)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/es.html">Español (Spanish)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/hi.html">हिन्दी (Hindi)</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
