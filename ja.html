@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeClip プライバシーポリシー</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.25em; }
+        p { margin-top: 0; margin-bottom: 16px; }
+        ul { margin-top: 0; margin-bottom: 16px; padding-left: 2em; }
+        li { margin-bottom: 8px; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: rgba(27,31,35,0.05);
+            border-radius: 3px;
+        }
+        .language-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eaecef;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SeClip プライバシーポリシー</h1>
+
+    <p><strong>制定日:</strong> 2025年12月12日</p>
+
+    <p>KuroAppWorks（以下「当方」）は、モバイルアプリケーション「SeClip」（以下「本サービス」）を運営しています。本プライバシーポリシーは、本サービスの利用時における個人データの収集、使用、開示に関する当方の方針、および当該データに関するお客様の選択肢について説明するものです。</p>
+
+    <p>当方は、お客様のプライバシー保護に尽力しています。以下に記載する広告パートナーによって収集されるデータを除き、お客様がSeClip内で作成したすべてのデータは、お客様のデバイス内にローカルに保存され、当方や第三者に送信されることはありません。</p>
+
+    <h2>情報の収集と使用</h2>
+
+    <h3>1. お客様が提供するデータ（ローカル保存および暗号化）:</h3>
+    <ul>
+        <li><strong>キーワード、セキュア項目、メモ:</strong> 「Clips」および「Secure」タブに保存されたテキスト、ID、パスワード、メモ、その他の情報は、お客様のデバイス上のローカルデータベースにのみ保存されます。</li>
+        <li><strong>暗号化されたデータ:</strong> 「Secure」タブに保存された情報（メモやカスタムフィールドを含む）は、業界標準のAES-256（GCMモード）暗号化を使用して暗号化された後、デバイスのローカルデータベースに保存されます。復号キーはお客様のマスターパスワードから生成され、平文で保存されることはありません。</li>
+    </ul>
+
+    <h3>2. アプリの設定（ローカル保存）:</h3>
+    <p>テーマ設定、フォントサイズ、認証設定などのアプリ設定は、AndroidのDataStoreを使用してデバイスにローカル保存されます。</p>
+    
+    <h3>3. 広告および同意管理のための情報:</h3>
+    <p>本サービスの運営を維持するため、広告の表示およびユーザーの同意管理を行っています。これには、提携する第三者パートナーによる特定のデバイス情報の収集が含まれます。</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> 広告配信のためにGoogle AdMobを使用しています。AdMobは、パーソナライズされた広告体験を提供するために、デバイス識別子（広告IDなど）、IPアドレス、および広告とのインタラクションに関する情報を収集する場合があります。</li>
+        <li><strong>Google User Messaging Platform (UMP) SDK:</strong> GDPRやCCPAなどのデータ保護規制の対象となる地域において、広告目的でのデータ収集および使用に関するお客様の同意を取得・管理するために、GoogleのUMP SDKを使用しています。お客様の同意の選択はローカルに保存され、広告サービスによって遵守されます。</li>
+    </ul>
+
+    <h2>データセキュリティ</h2>
+
+    <p>当方はデータのセキュリティを非常に重視しており、多層的な保護対策を講じています。</p>
+    <ul>
+        <li><strong>保存データの暗号化:</strong> 「Secure」タブ内のすべての項目は暗号化されています。お客様のマスターパスワードがなければ、このデータを復号することは計算上不可能です。</li>
+        <li><strong>メモリ内パスワードキャッシュ:</strong> 利便性（PINや生体認証によるロック解除など）を提供するため、認証成功後、マスターパスワードが一時的にデバイスのメモリ（RAM）に保持される場合があります。このキャッシュは、アプリがバックグラウンドに移行するか終了すると即座に消去されます。</li>
+        <li><strong>画面セキュリティ:</strong> 視覚的なデータ漏洩を防ぐため、本サービスではAndroidの <code>FLAG_SECURE</code> を利用しています。これにより、スクリーンショット、画面録画、および「最近使ったアプリ」一覧でのアプリ内容の表示が防止されます。</li>
+        <li><strong>バックアップの制限:</strong> 本アプリでは、Android標準の自動バックアップ機能を意図的に無効にしています。これは、機密データ（暗号化された項目や設定を含む）がGoogleドライブやその他のクラウドバックアップサービスに自動的にアップロードされるのを防ぐためのセキュリティ措置です。</li>
+    </ul>
+    
+    <h2>バックアップと復元（ユーザー管理）</h2>
+    <ul>
+        <li><strong>オプション機能:</strong> 本サービスは、お客様が選択したファイルにデータをバックアップする機能を提供しています。このプロセスは完全にお客様によって開始・管理されます。</li>
+        <li><strong>バックアップファイルの安全性:</strong> バックアップに「セキュア項目」を含める場合、バックアップファイルには暗号化されたデータと、バックアップ時点のパスワードのハッシュが含まれます。平文のパスワード自体は、アプリ使用時と同様に保存されません。</li>
+        <li><strong>復元のセキュリティ:</strong> セキュア項目を含むバックアップを復元するには、バックアップ作成時に有効だったマスターパスワードを入力する<strong>必要があります</strong>。これにより、バックアップファイルと正しいパスワードの両方を持つ者だけが、暗号化された情報にアクセスできることが保証されます。</li>
+    </ul>
+
+    <h2>クリップボード管理</h2>
+    <ul>
+        <li><strong>クリップボードへの書き込み:</strong> 本アプリの主な機能は、利便性のために保存された情報をデバイスのクリップボードに書き込むことです。アプリがクリップボードの内容を<strong>読み取ることはありません</strong>。</li>
+        <li><strong>機密データの取り扱い（Android 13以上）:</strong> Android 13以上を搭載したデバイスで「Secure」タブから項目をコピーすると、そのデータは「機密（sensitive）」としてマークされます。これにより、Android OSはプレビューからコンテンツを隠し、一定時間（通常1時間）後に自動的に消去します。</li>
+        <li><strong>手動クリップボード消去（オプション）:</strong> 本サービスは、「クリップボードを消去」ボタン付きの通知をオプションで提供しています。これを有効にすると、セキュリティ強化のためにいつでも手動でクリップボードの内容を消去できます。</li>
+    </ul>
+
+    <h2>権限（パーミッション）</h2>
+    <p>本サービスは、以下の権限をリクエストする場合があります。</p>
+    <ul>
+        <li><strong>生体認証/指紋認証:</strong> デバイスの生体認証センサーを使用して「Secure」タブのロックを解除するために使用します。</li>
+        <li><strong>通知:</strong> アプリへの素早いアクセスおよびクリップボードの手動消去機能のための常駐通知を提供するために使用します。</li>
+    </ul>
+
+    <h2>ユーザーの選択と同意</h2>
+    <p>GDPR、CCPA、または同様の規制の対象となる地域では、初回起動時に同意フォームが表示され、広告目的でのデータ使用方法を選択できます。同意の設定は、アプリの設定画面からいつでも変更できます。</p>
+
+    <h2>本プライバシーポリシーの変更</h2>
+    <p>当方は、プライバシーポリシーを随時更新する場合があります。変更があった場合は、アプリ内に新しいプライバシーポリシーを掲載することでお知らせします。定期的に本プライバシーポリシーをご確認いただくことを推奨します。</p>
+
+    <h2>お問い合わせ</h2>
+    <p>本プライバシーポリシーに関するご質問は、以下までお問い合わせください。<br>
+    <a href="mailto:kuroappworks+contact@gmail.com">kuroappworks+contact@gmail.com</a></p>
+
+    <!-- Language Links Section -->
+    <div class="language-links">
+        <h3>Other Languages</h3>
+        <ul>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ja.html">日本語 (Japanese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/zh.html">中文 (Chinese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ko.html">한국어 (Korean)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/fr.html">Français (French)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/de.html">Deutsch (German)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/es.html">Español (Spanish)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/hi.html">हिन्दी (Hindi)</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
