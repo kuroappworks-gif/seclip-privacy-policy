@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad de SeClip</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.25em; }
+        p { margin-top: 0; margin-bottom: 16px; }
+        ul { margin-top: 0; margin-bottom: 16px; padding-left: 2em; }
+        li { margin-bottom: 8px; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: rgba(27,31,35,0.05);
+            border-radius: 3px;
+        }
+        .language-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eaecef;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Política de Privacidad de SeClip</h1>
+
+    <p><strong>Fecha de entrada en vigor:</strong> 12 de diciembre de 2025</p>
+
+    <p>KuroAppWorks ("nosotros" o "nuestro") opera la aplicación móvil SeClip (el "Servicio"). Esta Política de Privacidad le informa sobre nuestras políticas con respecto a la recopilación, el uso y la divulgación de datos personales cuando utiliza nuestro Servicio y las opciones que tiene asociadas con esos datos.</p>
+
+    <p>Nos comprometemos a proteger su privacidad. Todos los datos que cree dentro de SeClip se almacenan localmente en su dispositivo y no se nos transmiten a nosotros ni a ningún tercero, a excepción de los datos recopilados por nuestros socios publicitarios como se describe a continuación.</p>
+
+    <h2>Recopilación y uso de información</h2>
+
+    <h3>1. Datos que usted proporciona (Almacenados localmente y cifrados):</h3>
+    <ul>
+        <li><strong>Palabras clave, elementos seguros y notas:</strong> Cualquier texto, ID, contraseña, nota u otra información que guarde en las pestañas "Clips" y "Secure" se almacena exclusivamente en una base de datos local en su dispositivo.</li>
+        <li><strong>Datos cifrados:</strong> La información guardada en la pestaña "Secure" (Seguro), incluidas las notas y los campos personalizados, se cifra utilizando el estándar de la industria AES-256 (modo GCM) antes de guardarse en la base de datos local de su dispositivo. La clave de descifrado se deriva de su contraseña maestra y nunca se almacena en texto plano.</li>
+    </ul>
+
+    <h3>2. Configuración y preferencias de la aplicación (Almacenadas localmente):</h3>
+    <p>Las preferencias de su aplicación, como la configuración del tema, el tamaño de la fuente y la configuración de autenticación, se almacenan localmente en su dispositivo utilizando Android DataStore.</p>
+    
+    <h3>3. Información para publicidad y gestión del consentimiento:</h3>
+    <p>Para mantener el Servicio, mostramos anuncios y gestionamos el consentimiento del usuario. Esto implica la recopilación de cierta información del dispositivo por parte de nuestros socios externos.</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> Utilizamos Google AdMob para publicar anuncios. AdMob puede recopilar datos como identificadores de dispositivos (por ejemplo, ID de publicidad), direcciones IP e información sobre su interacción con los anuncios para proporcionar una experiencia publicitaria personalizada.</li>
+        <li><strong>Google User Messaging Platform (UMP) SDK:</strong> En regiones sujetas a regulaciones de protección de datos como el RGPD, utilizamos el SDK UMP de Google para obtener y gestionar su consentimiento para la recopilación y el uso de datos con fines publicitarios. Sus opciones de consentimiento se almacenan localmente y son respetadas por los servicios publicitarios.</li>
+    </ul>
+
+    <h2>Seguridad de los datos</h2>
+
+    <p>Nos tomamos muy en serio la seguridad de sus datos y hemos implementado múltiples capas de protección.</p>
+    <ul>
+        <li><strong>Cifrado en reposo:</strong> Todos los elementos de la pestaña "Secure" están cifrados. Sin su contraseña maestra, es informáticamente imposible descifrar estos datos.</li>
+        <li><strong>Caché de contraseña en memoria:</strong> Para proporcionar un acceso conveniente a la pestaña Segura (por ejemplo, mediante PIN o biometría), su contraseña maestra puede mantenerse temporalmente en la memoria (RAM) de su dispositivo después de autenticarse con éxito. Este caché se borra tan pronto como la aplicación pasa a segundo plano o se cierra.</li>
+        <li><strong>Seguridad de la pantalla:</strong> Para proteger contra la fuga de datos visuales, el Servicio utiliza <code>FLAG_SECURE</code> de Android. Esto evita capturas de pantalla, grabaciones de pantalla y la visualización del contenido de la aplicación en la lista de aplicaciones recientes.</li>
+        <li><strong>Restricción de copia de seguridad:</strong> Hemos desactivado intencionalmente la función estándar de copia de seguridad automática de Android para esta aplicación. Esta es una medida de seguridad para evitar que sus datos confidenciales (incluidos los elementos cifrados y la configuración) se carguen automáticamente en su Google Drive u otros servicios de copia de seguridad en la nube.</li>
+    </ul>
+    
+    <h2>Copia de seguridad y restauración (Controladas por el usuario)</h2>
+    <ul>
+        <li><strong>Función opcional:</strong> El Servicio proporciona una función opcional para realizar una copia de seguridad de sus datos en un archivo de su elección. Este proceso es iniciado y controlado completamente por usted.</li>
+        <li><strong>Seguridad del archivo de copia de seguridad:</strong> Si incluye "Elementos seguros" en su copia de seguridad, el archivo de copia de seguridad contendrá los datos cifrados y un hash de la contraseña del momento de la copia de seguridad. La contraseña en texto plano no se almacena, al igual que para el uso normal de la aplicación.</li>
+        <li><strong>Seguridad de la restauración:</strong> Para restaurar una copia de seguridad que contiene elementos seguros, <strong>debe</strong> proporcionar la contraseña maestra que estaba activa cuando se creó la copia de seguridad. Esto garantiza que solo alguien que posea tanto el archivo de copia de seguridad como la contraseña correcta pueda acceder a la información cifrada.</li>
+    </ul>
+
+    <h2>Gestión del portapapeles</h2>
+    <ul>
+        <li><strong>Escritura en el portapapeles:</strong> La función principal de la aplicación es escribir su información guardada en el portapapeles del dispositivo para su conveniencia. La aplicación <strong>no lee</strong> el contenido del portapapeles.</li>
+        <li><strong>Manejo de datos sensibles (Android 13+):</strong> Al copiar elementos de la pestaña "Secure" en dispositivos con Android 13 o superior, los datos se marcan como "sensibles". Esto indica al sistema operativo Android que oculte el contenido de las vistas previas y lo borre automáticamente después de un período de tiempo (generalmente una hora).</li>
+        <li><strong>Borrado manual del portapapeles (Opcional):</strong> El Servicio proporciona una notificación opcional con un botón "Limpiar portapapeles". Cuando está habilitada, esto le permite borrar manualmente el contenido del portapapeles en cualquier momento para mayor seguridad.</li>
+    </ul>
+
+    <h2>Permisos</h2>
+    <p>El Servicio puede solicitar los siguientes permisos:</p>
+    <ul>
+        <li><strong>Biometría/Huella digital:</strong> Para permitir el desbloqueo de la pestaña "Secure" con los sensores biométricos de su dispositivo.</li>
+        <li><strong>Notificaciones:</strong> Para proporcionar una notificación persistente para un acceso rápido a la aplicación y la función opcional de limpieza del portapapeles.</li>
+    </ul>
+
+    <h2>Elecciones del usuario y consentimiento</h2>
+    <p>En las regiones cubiertas por el RGPD o regulaciones similares, se le presentará un formulario de consentimiento en el primer inicio para elegir cómo se utilizan sus datos con fines publicitarios. Puede cambiar sus preferencias de consentimiento en cualquier momento desde la pantalla de Ajustes de la aplicación.</p>
+
+    <h2>Cambios en esta Política de Privacidad</h2>
+    <p>Podemos actualizar nuestra Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad dentro de la aplicación. Se le aconseja revisar esta Política de Privacidad periódicamente para detectar cualquier cambio.</p>
+
+    <h2>Contáctenos</h2>
+    <p>Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en: <a href="mailto:kuroappworks+contact@gmail.com">kuroappworks+contact@gmail.com</a></p>
+
+    <!-- Language Links Section -->
+    <div class="language-links">
+        <h3>Other Languages</h3>
+        <ul>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ja.html">日本語 (Japanese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/zh.html">中文 (Chinese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ko.html">한국어 (Korean)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/fr.html">Français (French)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/de.html">Deutsch (German)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/es.html">Español (Spanish)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/hi.html">हिन्दी (Hindi)</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
