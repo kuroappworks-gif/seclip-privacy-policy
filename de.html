@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung für SeClip</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.25em; }
+        p { margin-top: 0; margin-bottom: 16px; }
+        ul { margin-top: 0; margin-bottom: 16px; padding-left: 2em; }
+        li { margin-bottom: 8px; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: rgba(27,31,35,0.05);
+            border-radius: 3px;
+        }
+        .language-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eaecef;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Datenschutzerklärung für SeClip</h1>
+
+    <p><strong>Datum des Inkrafttretens:</strong> 12. Dezember 2025</p>
+
+    <p>KuroAppWorks („wir“, „unser“ oder „uns“) betreibt die mobile Anwendung SeClip (der „Dienst“). Diese Datenschutzerklärung informiert Sie über unsere Richtlinien bezüglich der Erfassung, Verwendung und Offenlegung personenbezogener Daten bei der Nutzung unseres Dienstes sowie über die Wahlmöglichkeiten, die Sie in Bezug auf diese Daten haben.</p>
+
+    <p>Wir verpflichten uns, Ihre Privatsphäre zu schützen. Alle Daten, die Sie in SeClip erstellen, werden lokal auf Ihrem Gerät gespeichert und nicht an uns oder Dritte übermittelt, mit Ausnahme der Daten, die von unseren Werbepartnern wie unten beschrieben erfasst werden.</p>
+
+    <h2>Datenerfassung und -verwendung</h2>
+
+    <h3>1. Von Ihnen bereitgestellte Daten (Lokal gespeichert und verschlüsselt):</h3>
+    <ul>
+        <li><strong>Schlüsselwörter, sichere Elemente und Notizen:</strong> Alle Texte, IDs, Passwörter, Notizen oder andere Informationen, die Sie in den Tabs „Clips“ und „Sicher“ (Secure) speichern, werden ausschließlich in einer lokalen Datenbank auf Ihrem Gerät abgelegt.</li>
+        <li><strong>Verschlüsselte Daten:</strong> Informationen, die im Tab „Sicher“ gespeichert werden, einschließlich Notizen und benutzerdefinierter Felder, werden mit dem Industriestandard AES-256 (GCM-Modus) verschlüsselt, bevor sie in der lokalen Datenbank Ihres Geräts gespeichert werden. Der Entschlüsselungsschlüssel wird von Ihrem Master-Passwort abgeleitet und niemals im Klartext gespeichert.</li>
+    </ul>
+
+    <h3>2. App-Einstellungen und Präferenzen (Lokal gespeichert):</h3>
+    <p>Ihre App-Präferenzen, wie z. B. Themeneinstellungen, Schriftgröße und Authentifizierungseinstellungen, werden mithilfe von Android DataStore lokal auf Ihrem Gerät gespeichert.</p>
+    
+    <h3>3. Informationen für Werbung und Einwilligungsmanagement:</h3>
+    <p>Um den Dienst zu unterstützen, zeigen wir Werbung an und verwalten die Benutzereinwilligungen. Dies beinhaltet die Erfassung bestimmter Geräteinformationen durch unsere Drittanbieter-Partner.</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> Wir verwenden Google AdMob zur Anzeigenschaltung. AdMob kann Daten wie Gerätekennungen (z. B. Advertising ID), IP-Adressen und Informationen über Ihre Interaktion mit Anzeigen erfassen, um ein personalisiertes Werbeerlebnis zu bieten.</li>
+        <li><strong>Google User Messaging Platform (UMP) SDK:</strong> In Regionen, die Datenschutzbestimmungen wie der DSGVO (GDPR) unterliegen, verwenden wir das UMP SDK von Google, um Ihre Einwilligung zur Datenerfassung und -verwendung für Werbezwecke einzuholen und zu verwalten. Ihre Einwilligungsentscheidungen werden lokal gespeichert und von den Werbediensten respektiert.</li>
+    </ul>
+
+    <h2>Datensicherheit</h2>
+
+    <p>Wir nehmen die Sicherheit Ihrer Daten sehr ernst und haben mehrere Schutzebenen implementiert.</p>
+    <ul>
+        <li><strong>Verschlüsselung im Ruhezustand:</strong> Alle Elemente im Tab „Sicher“ sind verschlüsselt. Ohne Ihr Master-Passwort ist es rechnerisch unmöglich, diese Daten zu entschlüsseln.</li>
+        <li><strong>Passwort-Caching im Arbeitsspeicher:</strong> Um einen bequemen Zugriff auf den Tab „Sicher“ zu ermöglichen (z. B. via PIN oder Biometrie), kann Ihr Master-Passwort nach erfolgreicher Authentifizierung vorübergehend im Arbeitsspeicher (RAM) Ihres Geräts gehalten werden. Dieser Cache wird gelöscht, sobald die App in den Hintergrund wechselt oder geschlossen wird.</li>
+        <li><strong>Bildschirmsicherheit:</strong> Zum Schutz vor visuellem Datenleck nutzt der Dienst <code>FLAG_SECURE</code> von Android. Dies verhindert Screenshots, Bildschirmaufnahmen und die Anzeige des App-Inhalts in der Liste der zuletzt verwendeten Apps.</li>
+        <li><strong>Backup-Einschränkung:</strong> Wir haben die standardmäßige automatische Backup-Funktion von Android für diese App absichtlich deaktiviert. Dies ist eine Sicherheitsmaßnahme, um zu verhindern, dass Ihre sensiblen Daten (einschließlich verschlüsselter Elemente und Einstellungen) automatisch in Ihr Google Drive oder andere Cloud-Backup-Dienste hochgeladen werden.</li>
+    </ul>
+    
+    <h2>Sichern und Wiederherstellen (Vom Benutzer gesteuert)</h2>
+    <ul>
+        <li><strong>Optionale Funktion:</strong> Der Dienst bietet eine optionale Funktion, um Ihre Daten in einer Datei Ihrer Wahl zu sichern. Dieser Prozess wird vollständig von Ihnen initiiert und gesteuert.</li>
+        <li><strong>Sicherheit der Sicherungsdatei:</strong> Wenn Sie „Sichere Elemente“ in Ihr Backup aufnehmen, enthält die Sicherungsdatei die verschlüsselten Daten und einen Hash des Passworts zum Zeitpunkt der Sicherung. Das Passwort selbst wird nicht im Klartext gespeichert, genau wie bei der Live-Nutzung der App.</li>
+        <li><strong>Sicherheit bei der Wiederherstellung:</strong> Um ein Backup wiederherzustellen, das sichere Elemente enthält, <strong>müssen</strong> Sie das Master-Passwort eingeben, das zum Zeitpunkt der Erstellung des Backups aktiv war. Dies stellt sicher, dass nur jemand, der sowohl die Sicherungsdatei als auch das korrekte Passwort besitzt, auf die verschlüsselten Informationen zugreifen kann.</li>
+    </ul>
+
+    <h2>Verwaltung der Zwischenablage</h2>
+    <ul>
+        <li><strong>Schreiben in die Zwischenablage:</strong> Die Kernfunktion der App besteht darin, Ihre gespeicherten Informationen zu Ihrer Bequemlichkeit in die Zwischenablage des Geräts zu schreiben. Die App <strong>liest nicht</strong> den Inhalt der Zwischenablage.</li>
+        <li><strong>Umgang mit sensiblen Daten (Android 13+):</strong> Wenn Sie Elemente aus dem Tab „Sicher“ auf Geräten mit Android 13 oder höher kopieren, werden die Daten als „sensibel“ markiert. Dies signalisiert dem Android-Betriebssystem, den Inhalt in der Vorschau auszublenden und nach einer gewissen Zeit (in der Regel eine Stunde) automatisch zu löschen.</li>
+        <li><strong>Manuelles Leeren der Zwischenablage (Optional):</strong> Der Dienst bietet eine optionale Benachrichtigung mit einer Schaltfläche „Zwischenablage leeren“. Wenn aktiviert, können Sie den Inhalt der Zwischenablage jederzeit manuell löschen, um die Sicherheit zu erhöhen.</li>
+    </ul>
+
+    <h2>Berechtigungen</h2>
+    <p>Der Dienst kann die folgenden Berechtigungen anfordern:</p>
+    <ul>
+        <li><strong>Biometrie/Fingerabdruck:</strong> Zum Entsperren des Tabs „Sicher“ mit den biometrischen Sensoren Ihres Geräts.</li>
+        <li><strong>Benachrichtigungen:</strong> Um eine dauerhafte Benachrichtigung für den schnellen App-Zugriff und die optionale Funktion zum Leeren der Zwischenablage bereitzustellen.</li>
+    </ul>
+
+    <h2>Wahlmöglichkeiten und Einwilligung des Benutzers</h2>
+    <p>In Regionen, die unter die DSGVO (GDPR) oder ähnliche Vorschriften fallen, wird Ihnen beim ersten Start ein Einwilligungsformular angezeigt, in dem Sie auswählen können, wie Ihre Daten für Werbezwecke verwendet werden. Sie können Ihre Einwilligungspräferenzen jederzeit in den Einstellungen der App ändern.</p>
+
+    <h2>Änderungen dieser Datenschutzerklärung</h2>
+    <p>Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung in der App veröffentlichen. Es wird empfohlen, diese Datenschutzerklärung regelmäßig auf Änderungen zu überprüfen.</p>
+
+    <h2>Kontaktieren Sie uns</h2>
+    <p>Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter: <a href="mailto:kuroappworks+contact@gmail.com">kuroappworks+contact@gmail.com</a></p>
+
+    <!-- Language Links Section (Same as above) -->
+    <div class="language-links">
+        <h3>Other Languages</h3>
+        <ul>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ja.html">日本語 (Japanese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/zh.html">中文 (Chinese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ko.html">한국어 (Korean)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/fr.html">Français (French)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/de.html">Deutsch (German)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/es.html">Español (Spanish)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/hi.html">हिन्दी (Hindi)</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
