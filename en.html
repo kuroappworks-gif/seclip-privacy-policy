@@ -55,6 +55,11 @@
             background-color: rgba(27,31,35,0.05);
             border-radius: 3px;
         }
+        .language-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eaecef;
+        }
     </style>
 </head>
 <body>
@@ -65,48 +70,48 @@
 
     <p>KuroAppWorks ("we," "our," or "us") operates the SeClip mobile application (the "Service"). This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
 
-    <p>We are committed to protecting your privacy. All data you create within SeClip is stored locally on your device and is not transmitted to us or any third party.</p>
+    <p>We are committed to protecting your privacy. All data you create within SeClip is stored locally on your device and is not transmitted to us or any third party, except for data collected by our advertising partners as described below.</p>
 
     <h2>Information Collection and Use</h2>
 
-    <h3>1. Data You Provide (Stored Locally):</h3>
+    <h3>1. Data You Provide (Stored Locally and Encrypted):</h3>
     <ul>
-        <li><strong>Keywords and Secure Items:</strong> Any text, IDs, passwords, notes, or other information you save in the "Clips" and "Secure" tabs is stored exclusively in a local database on your device.</li>
-        <li><strong>Encrypted Data:</strong> Information saved in the "Secure" tab is encrypted using industry-standard AES-256 (GCM mode) encryption before it is saved to your device's local database. The decryption key is derived from your master password and is never stored in plaintext.</li>
+        <li><strong>Keywords, Secure Items, and Notes:</strong> Any text, IDs, passwords, notes, or other information you save in the "Clips" and "Secure" tabs is stored exclusively in a local database on your device.</li>
+        <li><strong>Encrypted Data:</strong> Information saved in the "Secure" tab, including notes and custom fields, is encrypted using industry-standard AES-256 (GCM mode) encryption before it is saved to your device's local database. The decryption key is derived from your master password and is never stored in plaintext.</li>
     </ul>
 
     <h3>2. App Settings and Preferences (Stored Locally):</h3>
-    <p>Your app preferences, such as theme settings, font size, and whether to enable features like PIN or Biometric authentication, are stored locally on your device using Android's DataStore.</p>
+    <p>Your app preferences, such as theme settings, font size, and authentication settings, are stored locally on your device using Android's DataStore.</p>
+    
+    <h3>3. Information for Advertising and Consent Management:</h3>
+    <p>To support the Service, we display ads and manage user consent. This involves the collection of certain device information by our third-party partners.</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> We use Google AdMob to serve ads. AdMob may collect data such as device identifiers (e.g., Advertising ID), IP addresses, and information about your interaction with ads to provide a personalized advertising experience.</li>
+        <li><strong>Google User Messaging Platform (UMP) SDK:</strong> In regions subject to data protection regulations like GDPR and CCPA, we use Google's UMP SDK to obtain and manage your consent for the collection and use of data for advertising purposes. Your consent choices are stored locally and respected by the advertising services.</li>
+    </ul>
 
     <h2>Data Security</h2>
 
-    <p>We take the security of your data very seriously.</p>
+    <p>We take the security of your data very seriously and have implemented multiple layers of protection.</p>
     <ul>
-        <li><strong>Encryption at Rest:</strong> As mentioned, all items in the "Secure" tab are encrypted. Without your master password, this data is computationally infeasible to decrypt.</li>
-        <li><strong>In-Memory Password Caching:</strong> To provide convenient access to the Secure tab (e.g., via PIN or biometrics), your master password may be temporarily held in your device's memory (RAM) after you successfully authenticate. This cache is cleared as soon as the app goes to the background or is closed, ensuring it does not persist.</li>
+        <li><strong>Encryption at Rest:</strong> All items in the "Secure" tab are encrypted. Without your master password, this data is computationally infeasible to decrypt.</li>
+        <li><strong>In-Memory Password Caching:</strong> To provide convenient access to the Secure tab (e.g., via PIN or biometrics), your master password may be temporarily held in your device's memory (RAM) after you successfully authenticate. This cache is cleared as soon as the app goes to the background or is closed.</li>
         <li><strong>Screen Security:</strong> To protect against visual data leakage, the Service utilizes Android's <code>FLAG_SECURE</code>. This prevents screenshots, screen recording, and the display of the app's content in the recent apps list (task switcher).</li>
+        <li><strong>Backup Restriction:</strong> We have intentionally disabled the standard Android Auto Backup feature for this app. This is a security measure to prevent your sensitive data (including encrypted items and settings) from being automatically uploaded to your Google Drive or other cloud backup services.</li>
     </ul>
-
-    <h2>Backup and Restore</h2>
+    
+    <h2>Backup and Restore (User-Controlled)</h2>
     <ul>
-        <li><strong>User-Controlled Backups:</strong> The Service provides an optional feature to back up your data to a file of your choosing (e.g., on your device or cloud storage). This process is initiated entirely by you.</li>
-        <li><strong>Backup File Security:</strong> If you choose to include "Secure Items" in your backup, the backup file will contain the encrypted data and the password hash from the time of backup.</li>
-        <li><strong>Restore Security:</strong> To restore a backup containing secure items, you must provide the master password that was active when the backup was created. This ensures that only someone who possesses both the backup file and the correct password can access the encrypted information. The backup file alone is not sufficient to compromise your data.</li>
-        <li><strong>Local Data Handling:</strong> All backup and restore processes occur locally on your device. Your data is not sent to our servers at any point.</li>
-    </ul>
-
-    <h2>Advertising</h2>
-    <p>The Service uses Google AdMob to display advertisements to support its development.</p>
-    <ul>
-        <li><strong>Google AdMob:</strong> AdMob may collect and use data as described in Google's Privacy & Terms. This may include device identifiers, location data (if permissions are granted), and other information to serve personalized ads. You can learn more about Google's advertising policies here: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
-        <li><strong>Rewarded Ads:</strong> You have the option to watch a rewarded video ad to temporarily disable all advertisements. This is a voluntary action.</li>
+        <li><strong>Optional Feature:</strong> The Service provides an optional feature to back up your data to a file of your choosing. This process is initiated and controlled entirely by you.</li>
+        <li><strong>Backup File Security:</strong> If you include "Secure Items" in your backup, the backup file will contain the encrypted data and a hash of the password from the time of backup. The plaintext password itself is not stored in the same way as it is for live app use.</li>
+        <li><strong>Restore Security:</strong> To restore a backup containing secure items, you **must** provide the master password that was active when the backup was created. This ensures that only someone who possesses both the backup file and the correct password can access the encrypted information.</li>
     </ul>
 
     <h2>Clipboard Management</h2>
     <ul>
-        <li><strong>Clipboard Access:</strong> The core function of the app is to copy your saved information to the device's clipboard for your convenience.</li>
-        <li><strong>Sensitive Data Handling (Android 13+):</strong> When copying items from the "Secure" tab on devices running Android 13 or higher, the data is marked as "sensitive." This signals to the Android operating system that the clipboard content should be hidden from previews and automatically cleared after a period of time (typically one hour, as determined by the OS).</li>
-        <li><strong>Manual Clipboard Clearing:</strong> The Service provides an optional notification with a "Clear Clipboard" button. This allows you to manually clear the clipboard's contents at any time for enhanced security. This feature requires you to enable the persistent notification in the app's settings.</li>
+        <li><strong>Clipboard Writing:</strong> The core function of the app is to write your saved information to the device's clipboard for your convenience. The app **does not read** the clipboard's contents.</li>
+        <li><strong>Sensitive Data Handling (Android 13+):</strong> When copying items from the "Secure" tab on devices running Android 13 or higher, the data is marked as "sensitive." This signals to the Android OS to hide the content from previews and automatically clear it after a period of time (typically one hour).</li>
+        <li><strong>Manual Clipboard Clearing (Optional):</strong> The Service provides an optional notification with a "Clear Clipboard" button. When enabled, this allows you to manually clear the clipboard's contents at any time for enhanced security.</li>
     </ul>
 
     <h2>Permissions</h2>
@@ -116,23 +121,26 @@
         <li><strong>Notifications:</strong> To provide a persistent notification for quick app access and the optional clipboard clearing feature.</li>
     </ul>
 
+    <h2>User Choices and Consent</h2>
+    <p>In regions covered by GDPR, CCPA, or similar regulations, you will be presented with a consent form upon first launch to choose how your data is used for advertising. You can change your consent preferences at any time from the app's Settings screen.</p>
+
     <h2>Changes to This Privacy Policy</h2>
     <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the app. You are advised to review this Privacy Policy periodically for any changes.</p>
 
     <h2>Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:kuroappworks+contact@gmail.com">kuroappworks+contact@gmail.com</a></p>
 
- <!-- Language Links Section -->
+    <!-- Language Links Section -->
     <div class="language-links">
-        <h3>他の言語はこちら / Other languages</h3>
+        <h3>Other Languages</h3>
         <ul>
-            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ja.html">日本語 - Japanese</a></li>
-            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/zh.html">中文（简体） - Chinese Simplified</a></li>
-            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ko.html">한국어 - Korean</a></li>
-            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/fr.html">Français - French</a></li>
-            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/de.html">Deutsch - German</a></li>
-            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/es.html">Español - Spanish</a></li>
-            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/hi.html">हिन्दी - Hindi</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ja.html">日本語 (Japanese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/zh.html">中文 (Chinese)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/ko.html">한국어 (Korean)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/fr.html">Français (French)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/de.html">Deutsch (German)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/es.html">Español (Spanish)</a></li>
+            <li><a href="https://kuroappworks-gif.github.io/seclip-privacy-policy/hi.html">हिन्दी (Hindi)</a></li>
         </ul>
     </div>
 
